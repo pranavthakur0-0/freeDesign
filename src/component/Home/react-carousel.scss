@@ -1,0 +1,94 @@
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  visibility: hidden;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+.coarusel-top {
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+  & h1 {
+    font-size: 6rem;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.frame {
+  padding: 10rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  & .img {
+    height: 100%;
+    width: 40%;
+    background-image: url(../img//aboutus.jpeg);
+    background-size: cover;
+  }
+  & .text {
+    position: relative;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    text-align: left;
+    & h3 {
+      font-weight: 300;
+      padding-bottom: 3rem;
+    }
+    & p {
+      font-size: 1.3rem;
+    }
+    & .card {
+      top: 55%;
+      left: -40%;
+      height: fit-content;
+      position: absolute;
+      border-radius: 1rem;
+      width: fit-content;
+      background: rgb(229,29,244);
+      background: linear-gradient(6deg, rgba(229,29,244,0.45284051120448177) 0%, rgba(88,14,101,0.6489189425770308) 7%, rgba(39,7,90,0.7777704831932774) 20%, rgba(14,4,70,0.8001794467787114) 47%);
+
+      & .card-inner {
+        position: relative;
+        border-radius: 1rem;
+        padding: 2rem 4rem 4rem 4rem;
+        height: 100%;
+        background: rgb(29,29,29);
+        background: linear-gradient(25deg, rgba(29,29,29,0.38561362044817926) 0%, rgba(112,112,112,0.5816920518207283) 73%);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 13.5px );
+        -webkit-backdrop-filter: blur( 13.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        & p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

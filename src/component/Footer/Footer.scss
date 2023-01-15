@@ -1,0 +1,191 @@
+.footer-wrapper{
+
+    position: relative;
+    padding-top: 2rem;
+}
+.main-footer-circle{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    border-radius: 50vw 50vw 0vw 0vw ;
+    box-shadow: rgba(255, 255, 255, 0.253) 0px 50px 4px 0px, rgba(255, 255, 255, 0.169) 0px 10px 100px 0px;
+    background-color: black;
+    display: flex;
+    left: -3px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30vh;
+    & .ellipseblur{
+        position: absolute;
+        height: 90vh;
+        z-index: 1;
+        top: -60vh;
+        overflow: visible;
+    }
+    & .logo{
+        height: 10vh;
+        width: 10vh;
+        background-color: white;
+    }
+    & h1{
+        padding-top: 3rem;
+        font-weight: 300;
+        font-size: 5rem;
+        color: #B6B5BE;
+    }
+    & p{
+        padding: 2rem 0rem;
+        font-size: 1.4rem;
+        width: 35%;
+        text-align: center;
+        color: #B6B5BE;
+    }
+    .footer-input-email{
+        margin-top: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+        width: 40rem;
+        padding: 2vh;
+        border: none;
+        background-color: #18161B;
+        color: #B6B5BE;
+        
+    }
+
+    textarea:focus, input:focus{
+        outline: none;
+    }
+    .input-text{
+        padding-top: 4rem;
+        font-size: 1.2rem;
+    }
+}
+
+.main-home-line{
+    padding: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none !important;
+    
+    & div:first-child{
+        height: 5px;
+        width: 5px;
+        background-color: #7F5CF4;
+        border: none;
+    }
+
+
+    & div:nth-child(2){
+        height: 1px;
+        width: 100%;
+        background-color: #2a2647;
+        border: none;
+    }
+    & div:last-child{
+        height: 5px;
+        width: 5px;
+        background-color: #7F5CF4;
+        border: none;
+    }
+}
+
+.main-footer-footer{
+    position: relative;
+    height: fit-content;
+    width: 100vw;
+    background-image: url(../img/footer.svg);
+    background-position:0px;
+    background-size: 100vw;
+ 
+
+    & .footer-wrapper{
+        padding: 0rem 5rem;
+    }
+    & .main-footer-links{
+        padding: 10rem 0rem;
+        display: flex;
+        justify-content: space-around;
+    }
+   & .links{
+    width: fit-content !important;
+    display: flex;
+    justify-content: space-between;
+
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10rem;
+
+        & div
+        {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            & .box{
+                height: 0.8rem;
+                width: 0.8rem;
+                background-color:#694DC7;
+            }
+            & h2{
+                font-size: 3rem;
+                color: #694DC7;
+                font-weight: 300;
+            }
+        }
+
+        ul{
+            list-style-type: none;
+            padding-top: 2rem;
+            padding-left: 2rem;
+            font-size: 1.7rem;
+            line-height: 2.5;
+            color: #B6B5BE;
+            font-weight: 400;
+        }
+
+    }
+
+    .sperator-line-footer{
+        height: 1px;
+        width: 100%;
+        background-color: beige;
+        margin: 2rem 0rem;
+    }
+    .footer-policy-section{
+        padding: 3rem 2rem;
+        color: #B6B5BE;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.4rem;
+
+        & .two ul{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            gap: 2rem;
+        }
+    }
+    .footer-end-text{
+        height: fit-content;
+        margin-left: -10rem;
+        font-size: 23rem;
+        color: white;
+ 
+
+        & .text{
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            z-index: 2;
+            background-color: transparent;
+            overflow-x: hidden !important;
+        }
+    }
+
+
+}
+
+
