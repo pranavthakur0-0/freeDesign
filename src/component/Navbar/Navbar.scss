@@ -1,13 +1,16 @@
 .main-navbar-wrapper
 {
     position: absolute;
-    z-index: 9999;
+    z-index: 9;
     & nav{
         width: 100vw;
         display: flex;
         justify-content: space-between;
-        padding: 4rem 4rem;
+        padding: 4rem 7rem;
         font-size: 1.5rem;
+        .logo{
+            color: white;
+        }
         & ul{
             display: flex;
             gap: 4rem;

@@ -1,5 +1,6 @@
 import "./Footer.scss"
 import ellipseblur from "../img/ellipse.svg"
+import Marquee from "react-fast-marquee";
 
 export default function Footer() {
 
@@ -74,7 +75,8 @@ export default function Footer() {
             <div className="footer-end-text">
                 
                 <div className="text">
-                Protect the Data</div></div>
+                    <Marquee className="circular-marquee"  gradient={false}>* Protect the Data * Protect the Data * Protect the Data * Protect the Data</Marquee>
+               </div></div>
         
         </div>
             

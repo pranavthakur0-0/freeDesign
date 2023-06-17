@@ -65,114 +65,127 @@
 
         & .landing{
             margin-bottom: 10rem;
-            padding-top: 10rem;
+            padding-top: 20rem;
+            padding-left: 5vw;
             top: 0px;
             position: absolute;
             height: 100%;
             gap: 20rem;
             width: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
             color: white;
-            font-size: 5rem;
-            & h1{
-                z-index: 100;
-                font-size: 7rem;
-                }
-            & .glass-wrapper{
-                @extend %glass-wrapper;
-                z-index: 101;
-                transform: rotate(-12deg);
-                top: 30%;
-                left: 16%;
-                & .text{
-                    @extend %glass-wrapper-text;
-                }
+            
+            background-repeat: no-repeat;
+            background-position:right;
+            background-size: cover;
+            .Typewriter{
+              position: relative;
+              top: -6rem;
             }
-            & .glass-wrapper1{
-                @extend %glass-wrapper;
-                z-index: 101;
-                transform: rotate(12deg);
-                top: 70%;
-                left: 78%;
-                & .text1{
-                    @extend %glass-wrapper-text;
-                }
+            span{
+                font-size: 9vw;
+                font-family: "extatic-regular-bold";
             }
-            & .circlelock{
-                border-radius:50%;
-                position: absolute;
-                height: 40rem;
-                width: 40rem;
-                background-image: url(../img/landingcircle.svg);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                box-shadow: 0px 0px 20px 20px rgba(73, 15, 138, 0.503);
-             
-                & .inner-{
-                    position: relative;
-                    height: 40rem;
-                    width: 40rem;
-                    border-radius:50%;
-                    background-image: url(../img/movingbackground.svg);
-                    background-size: cover;
-                    color: #7f5cf4;
-                    backdrop-filter: blur( 13.5px );
-                    filter: blur(1.3px);
-                    display: flex;
-                    overflow-x: hidden;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 1rem !important;
-                    flex-direction: column;
-                  }
-                  & .lock-out{
-                    height: 10rem;
-                    width: 10rem;
-                    position: absolute;
-                    z-index: 99;
-                    border-radius: 50%;
-                    background: rgb(229,29,244);
-                    background: linear-gradient(6deg, rgba(125, 39, 131, 0.306) 0%, rgba(88, 14, 101, 0.476) 7%, rgba(65, 25, 129, 0.451) 20%, rgba(48, 6, 162, 0.502) 47%);
-                    box-shadow: 0 8px 32px 0 rgba(209, 209, 209, 0.453);
-                & .lock-wrap{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 10rem;
-                    width: 10rem;
-                    background: rgb(29,29,29);
-                    background: linear-gradient(25deg, rgba(29,29,29,0.38561362044817926) 0%, rgba(112,112,112,0.5816920518207283) 73%);
-                    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-                    backdrop-filter: blur( 13.5px );
-                    -webkit-backdrop-filter: blur( 13.5px );
-                    border-radius: 10px;
-                    border: 1px solid rgba( 255, 255, 255, 0.18 );
-                    border-radius: 50%;
-             
-                    & .img{
-                        height: 8rem;
-                        width: 8rem;
-                        filter: blur(0) !important;
-                        background-image: url(../img/lock.svg);
-                        background-size: 4rem;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        border-radius: 50%;
-                    }
+            p{
+              font-size: 2.4rem;
+            }
 
-                }
-            }
-            }
+
+.scroll-down {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  bottom: 30px;
+  height: 80px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  cursor: pointer;
+}
+.scroll-down::before {
+  animation: scrollDownAnimation 2.5s infinite;
+  background-color: #fff;
+  border-radius: 100%;
+  content: '';
+  height: 6px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 6px;
+}
+@-moz-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
         }
 
     }
 
     .main-about{
-        padding: 5rem 5rem;
+        padding: 5rem 0rem;
         margin-top: 10vh;
         height: fit-content;
         width: 100%;
@@ -187,28 +200,43 @@
         }
         & .wrapper{
             display: flex;
-            justify-content: space-between;
-            padding: 10rem 5rem 0rem 5rem;
+            justify-content: flex-start;
+            padding: 10rem 5rem 0rem 0rem;
             width: 100%;
+            flex-wrap: nowrap;
+            gap: 7vw;
             & .img{
                 background-image: url(../img/aboutus.jpeg);
-                height: 70rem;
-                width: 50rem;
+                height: 90rem;
+                width: 45%;
                 background-size: cover;
             }
 
             & .text-wrapper{
-                padding-top: 5rem;
+                padding-top: 10rem;
                 width: 60rem;
                 height: fit-content;
+                & h3{
+                  font-size: 2.2rem;
+                  padding-bottom: 3rem;
+              }
+
                 & h1{
-                    font-size: 2.2rem;
-                    padding-bottom: 4rem;
+                    font-size: 4rem;
+                    padding-bottom: 3rem;
                 }
                 & p{
                     font-size: 1.5rem;
-                    padding-bottom: 5rem;
+                    padding-bottom: 3rem;
                     color: #b6b5be;
+                    }
+
+                   & ul{
+                    line-height: 2;
+                     padding-left: 3rem;
+                     font-size: 1.5rem;
+                     color: #b6b5be;
+                     padding-bottom: 5rem;
                 }
                 .about-button{
                     cursor: pointer;
@@ -252,13 +280,14 @@
 
   & .main-home-line {
     padding: 3rem 0rem;
+    padding-bottom: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
 
     & div:first-child {
-      height: 5px;
-      width: 5px;
+      height: 10px;
+      width: 10px;
       background-color: #7f5cf4;
       border: none;
     }
@@ -266,12 +295,12 @@
     & div:nth-child(2) {
       height: 1px;
       width: 100%;
-      background-color: #2a2647;
+      background-color: #7f5cf4;
       border: none;
     }
     & div:last-child {
-      height: 5px;
-      width: 5px;
+      height: 10px;
+      width: 10px;
       background-color: #7f5cf4;
       border: none;
     }

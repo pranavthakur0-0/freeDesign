@@ -6,11 +6,9 @@ function Navbar() {
     <>
     <div className="main-navbar-wrapper">
         <nav>
-            <div className="logo"></div>
+            <div className="logo">Logo</div>
             <ul>
                 <li><NavLink className="navbar-link" to="/">Home</NavLink></li>
-                <li><NavLink className="navbar-link" to="/about">About</NavLink></li>
-                <li><NavLink className="navbar-link" to="/services">Services</NavLink></li>
                 <li><NavLink className="navbar-link" to="/contact">Contact</NavLink></li>
             </ul>
         </nav>

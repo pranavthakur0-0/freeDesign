@@ -21,6 +21,11 @@ html{
     src: url(./component/font/Extatica-Regular.otf)
   }
 
+  @font-face {
+    font-family: "extatic-regular-bold";
+    src: url(./component/font/Extatica-Bold.otf)
+  }
+
 body{
     font-family: 'extatic-regular', sans-serif;
     font-weight: 700;
